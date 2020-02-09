@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".view.activity.DetalhesActivity">
+
+    <ImageView
+        android:id="@+id/imagemDetalhe"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/back_detalhe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@null"
+        android:backgroundTintMode="src_in"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.012"
+        app:srcCompat="@drawable/abc_vector_test" />
+
+    <ImageView
+        android:id="@+id/image_click"
+        android:background="#FFF"
+        android:padding="2dp"
+        android:scaleType="fitXY"
+        android:layout_width="130dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_detalhe"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/text_titulo_detalhes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="TEXTO GRANDE MAIOR MAIOR MAIOR"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_click" />
+
+    <TextView
+        android:id="@+id/text_descricao_detalhes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="Lorem epsolum Lorem epsolumLorem epsolumLorem epsolumLorem epsolumLorem epsolumLorem epsolumLorem epsolumLorem epsolumLorem epsolumLorem epsolumLorem epsolum "
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_titulo_detalhes" />
+
+       <TextView
+        android:id="@+id/text_estatico_publicacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="Published:"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_descricao_detalhes" />
+
+    <TextView
+        android:id="@+id/text_data_publicacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:text="18-mai-2019"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/text_estatico_publicacao"
+        app:layout_constraintTop_toBottomOf="@+id/text_descricao_detalhes" />
+
+    <TextView
+        android:id="@+id/text_estatico_preco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="Price:"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_estatico_publicacao" />
+
+    <TextView
+        android:id="@+id/text_preco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$5"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/text_estatico_preco"
+        app:layout_constraintTop_toTopOf="@+id/text_estatico_preco" />
+
+    <TextView
+        android:id="@+id/text_estatico_paginas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="Pages:"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_estatico_preco" />
+
+    <TextView
+        android:id="@+id/text_paginas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="82"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/text_estatico_paginas"
+        app:layout_constraintTop_toTopOf="@+id/text_estatico_paginas" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
